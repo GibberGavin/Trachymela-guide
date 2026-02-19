@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FSF_Template name="Standard Banner - Light Blue - Images Left" version="1.1">
+	<Author>Fact Sheet Fusion</Author>
+	<Description>This template supports a common web page layout with a banner element along the top and full width content. This template also supports all format types (HTML, PDF and XML) and media export formats. It includes a floating menu down the left of the fact sheet content and Entity images located vertically left of the Topics. Index displays the attached entity images, while the glossary displays all attached media.</Description>
+	<URL>http://www.lucidcentral.org/en-us/software/factsheetfusion/templates/standardbannerblueimagesleft.aspx</URL>
+	<Settings>
+		<Regular_Images>900</Regular_Images>
+		<Thumbnail_Images>300</Thumbnail_Images>
+		<Video format="webm">300</Video>
+		<JavaScript_Entity_Array>true</JavaScript_Entity_Array>
+		<html>true</html>
+		<Index>true</Index>
+		<Glossary>true</Glossary>
+		<PDFs>true</PDFs>
+	</Settings>
+</FSF_Template>

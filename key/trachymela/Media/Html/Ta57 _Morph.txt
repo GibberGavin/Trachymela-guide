@@ -1,0 +1,135 @@
+------------- 
+| Sex Ratio | 
+------------- 
+  Males:55, Females:55 (50.0% females) 
+
+
+	Exact binomial test
+
+data:  c(nFemales, nMales)
+number of successes = 55, number of trials = 110, p-value = 1
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.4031557 0.5968443
+sample estimates:
+probability of success 
+                   0.5 
+
+------------------------------------------ 
+| Testing for normality of distributions | 
+------------------------------------------ 
+
+   --------- 
+   | Males | 
+   --------- 
+
+	Shapiro-Wilk normality test
+
+data:  MaleSize$Length
+W = 0.9368, p-value = 0.007557
+
+
+	Shapiro-Wilk normality test
+
+data:  MaleSize$relW
+W = 0.97229, p-value = 0.298
+
+
+	Shapiro-Wilk normality test
+
+data:  MaleSize$relH
+W = 0.95188, p-value = 0.03499
+
+
+   ----------- 
+   | Females | 
+   ----------- 
+
+	Shapiro-Wilk normality test
+
+data:  FemaleSize$Length
+W = 0.97644, p-value = 0.3877
+
+
+	Shapiro-Wilk normality test
+
+data:  FemaleSize$relW
+W = 0.9862, p-value = 0.8047
+
+
+	Shapiro-Wilk normality test
+
+data:  FemaleSize$relH
+W = 0.97045, p-value = 0.2208
+
+
+---------------------------------------- 
+| Body Length vs Latitude relationship | 
+---------------------------------------- 
+
+   --------- 
+   | Males | 
+   --------- 
+
+Call:
+lm(formula = MaleSize$Length ~ MaleSize$Latitude)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.68358 -0.21621  0.08588  0.23097  0.43364 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        6.805664   0.411198  16.551   <2e-16 ***
+MaleSize$Latitude -0.004567   0.015981  -0.286    0.776    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2871 on 51 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.001599,	Adjusted R-squared:  -0.01798 
+F-statistic: 0.08168 on 1 and 51 DF,  p-value: 0.7762
+
+
+   ----------- 
+   | Females | 
+   ----------- 
+
+Call:
+lm(formula = FemaleSize$Length ~ FemaleSize$Latitude)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.78827 -0.28545  0.04008  0.26977  0.70230 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          6.52697    0.62438  10.454 3.54e-14 ***
+FemaleSize$Latitude -0.04924    0.02407  -2.046    0.046 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3559 on 50 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.07725,	Adjusted R-squared:  0.05879 
+F-statistic: 4.186 on 1 and 50 DF,  p-value: 0.04605
+
+
+---------------------------------------- 
+| Aedeagus Length analysis of variance | 
+---------------------------------------- 
+            Df  Sum Sq Mean Sq F value   Pr(>F)    
+Length       1 0.09234 0.09234   27.83 9.76e-06 ***
+Residuals   31 0.10287 0.00332                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+22 observations deleted due to missingness
+
+                Df  Sum Sq Mean Sq F value  Pr(>F)    
+Length           1 0.09234 0.09234  34.061 2.5e-06 ***
+Latitude         1 0.00379 0.00379   1.399  0.2466    
+Length:Latitude  1 0.02046 0.02046   7.547  0.0102 *  
+Residuals       29 0.07862 0.00271                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+22 observations deleted due to missingness

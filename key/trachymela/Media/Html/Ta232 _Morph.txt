@@ -1,0 +1,82 @@
+------------- 
+| Sex Ratio | 
+------------- 
+  Males:5, Females:6 (54.5% females) 
+
+
+	Exact binomial test
+
+data:  c(nFemales, nMales)
+number of successes = 6, number of trials = 11, p-value = 1
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.2337936 0.8325119
+sample estimates:
+probability of success 
+             0.5454545 
+
+------------------------------------------ 
+| Testing for normality of distributions | 
+------------------------------------------ 
+
+   --------- 
+   | Males | 
+   --------- 
+Not tested - fewer than 5 in sample 
+
+   ----------- 
+   | Females | 
+   ----------- 
+
+	Shapiro-Wilk normality test
+
+data:  FemaleSize$Length
+W = 0.94044, p-value = 0.6627
+
+
+	Shapiro-Wilk normality test
+
+data:  FemaleSize$relW
+W = 0.92605, p-value = 0.55
+
+
+	Shapiro-Wilk normality test
+
+data:  FemaleSize$relH
+W = 0.9653, p-value = 0.8595
+
+
+---------------------------------------- 
+| Body Length vs Latitude relationship | 
+---------------------------------------- 
+
+   --------- 
+   | Males | 
+   --------- 
+
+   ----------- 
+   | Females | 
+   ----------- 
+
+Call:
+lm(formula = FemaleSize$Length ~ FemaleSize$Latitude)
+
+Residuals:
+    1     2     3     4     5     6 
+ 0.00  0.70 -0.43 -0.31  0.18 -0.14 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)  
+(Intercept)         7.346117   2.073204   3.543   0.0239 *
+FemaleSize$Latitude 0.006843   0.068009   0.101   0.9247  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4536 on 4 degrees of freedom
+Multiple R-squared:  0.002525,	Adjusted R-squared:  -0.2468 
+F-statistic: 0.01013 on 1 and 4 DF,  p-value: 0.9247
+
+
+---------------------------------------- 
+| Aedeagus Length analysis of variance | 
+---------------------------------------- 

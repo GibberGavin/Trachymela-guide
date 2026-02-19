@@ -1,0 +1,46 @@
+2026-02-19 14:07:30,839 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeJsonFile: D:\Entomology Keys\Trachymela\key\trachymela.json
+2026-02-19 14:07:30,839 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeOptions...
+2026-02-19 14:07:30,839 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeFeatures...
+2026-02-19 14:07:30,879 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeStates...
+2026-02-19 14:07:30,880 [Thread-2] ERROR com.cbit.lucid.player.export.PlayerExport - unable to locate src file, mediaPath: Images/Ta96_A23-83b_SM.jpg
+2026-02-19 14:07:30,922 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta147_A20-143 (2)_SM.jpg
+2026-02-19 14:07:30,925 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Thumbs/Ta147_A20-143 (2)_SM.jpg
+2026-02-19 14:07:31,077 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta141_Ad07-152ca_SM.jpg
+2026-02-19 14:07:31,078 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Thumbs/Ta141_Ad07-152ca_SM.jpg
+2026-02-19 14:07:31,124 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeEntities...
+2026-02-19 14:07:31,173 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta02_A99-0806_SM.jpg
+2026-02-19 14:07:31,237 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta03_Ad25-055354ba_SM.jpg
+2026-02-19 14:07:31,374 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta08_A07-239b1_SM.jpg
+2026-02-19 14:07:31,754 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta18_Ad05-267a.jpg
+2026-02-19 14:07:31,921 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta23_A23-061_SM.jpg
+2026-02-19 14:07:31,928 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta23_Ad21-324aa_SM.jpg
+2026-02-19 14:07:31,957 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta24_A20-199_SM.jpg
+2026-02-19 14:07:31,958 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Thumbs/Ta24_A20-199_SM.jpg
+2026-02-19 14:07:32,023 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta26_Ad00-090a_SM.jpg
+2026-02-19 14:07:32,175 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta31_Ad25-052691a_SM.jpg
+2026-02-19 14:07:32,963 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta46_Ad21-337a_SM.jpg
+2026-02-19 14:07:33,096 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Html/Ta49 _Morph.html
+2026-02-19 14:07:34,516 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta90_Ad17-384a_SM.jpg
+2026-02-19 14:07:35,270 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta112_A17-209_SM.jpg
+2026-02-19 14:07:35,305 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta113_A20-307_SM.jpg
+2026-02-19 14:07:35,311 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta112_Ad17-209a_SM.jpg
+2026-02-19 14:07:35,314 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta112_Ad17-209b_SM.jpg
+2026-02-19 14:07:35,342 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta114_A02-054_SM.jpg
+2026-02-19 14:07:35,431 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta116_A17-167_SM.jpg
+2026-02-19 14:07:35,485 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta117_A23-080b (1)_SM.jpg
+2026-02-19 14:07:35,863 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta130_A11-001_SM.jpg
+2026-02-19 14:07:36,144 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta139_A04-442a_SM.jpg
+2026-02-19 14:07:36,208 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta141_A07-152c_SM.jpg
+2026-02-19 14:07:36,409 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta147_A20-143 (2)_SM.jpg
+2026-02-19 14:07:36,543 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta152_A17-114_SM.jpg
+2026-02-19 14:07:37,474 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta180_A23-106a_SM.jpg
+2026-02-19 14:07:37,475 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Thumbs/Ta180_A23-106a_SM.jpg
+2026-02-19 14:07:39,239 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - file exists, returning path: Images/Ta213_A06-021c_SM.jpg
+2026-02-19 14:07:40,073 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeSubsets...
+2026-02-19 14:07:40,073 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeScoreArrays...
+2026-02-19 14:07:40,108 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeMeasures...
+2026-02-19 14:07:40,133 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeDependencyArrays...
+2026-02-19 14:07:40,133 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeScopeArrays...
+2026-02-19 14:07:40,151 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeHtmlFile: D:\Entomology Keys\Trachymela\trachymela_player.html
+2026-02-19 14:07:40,241 [Thread-2] INFO com.cbit.lucid.builder.application.gui.deploy.DeployKeyDialog - copyMediaFiles: D:\Entomology Keys\Trachymela
+2026-02-19 14:07:53,501 [Thread-2] INFO com.cbit.lucid.player.export.PlayerExport - writeHomeFile: D:\Entomology Keys\Trachymela\trachymela.html

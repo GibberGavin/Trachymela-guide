@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AlphabetMenuHelper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<letter value="A" present="false" />
+	<letter value="B" present="true" />
+	<letter value="C" present="true" />
+	<letter value="D" present="false" />
+	<letter value="E" present="false" />
+	<letter value="F" present="false" />
+	<letter value="G" present="false" />
+	<letter value="H" present="false" />
+	<letter value="I" present="false" />
+	<letter value="J" present="false" />
+	<letter value="K" present="false" />
+	<letter value="L" present="false" />
+	<letter value="M" present="false" />
+	<letter value="N" present="false" />
+	<letter value="O" present="false" />
+	<letter value="P" present="true" />
+	<letter value="Q" present="false" />
+	<letter value="R" present="false" />
+	<letter value="S" present="true" />
+	<letter value="T" present="true" />
+	<letter value="U" present="false" />
+	<letter value="V" present="false" />
+	<letter value="W" present="false" />
+	<letter value="X" present="false" />
+	<letter value="Y" present="false" />
+	<letter value="Z" present="false" />
+	<symbol value="[" />
+</AlphabetMenuHelper>
