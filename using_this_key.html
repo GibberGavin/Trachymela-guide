@@ -1,60 +1,184 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="assets/css/home_template.css" rel="stylesheet"/>
-<link href="assets/icons/apple-touch-icon.png?v=wAXeg8j6jY" rel="apple-touch-icon" sizes="180x180"/>
-<link href="assets/icons/favicon-32x32.png?v=wAXeg8j6jY" rel="icon" sizes="32x32" type="image/png"/>
-<link href="assets/icons/favicon-16x16.png?v=wAXeg8j6jY" rel="icon" sizes="16x16" type="image/png"/>
-<link href="assets/icons/site.webmanifest?v=wAXeg8j6jY" rel="manifest"/>
-<link color="#5bbad5" href="assets/icons/safari-pinned-tab.svg?v=wAXeg8j6jY" rel="mask-icon"/>
-<link href="assets/icons/favicon.ico?v=wAXeg8j6jY" rel="shortcut icon"/>
-<meta content="#da532c" name="msapplication-TileColor"/>
-<meta content="#ffffff" name="theme-color"/>
-<title>Key to the species of Paropsis (V2). - Lucid4 Key Player</title>
+<meta charset="UTF-8">
+<title>TrachymelaID - Using the Key</title>
+
 <style>
-/* Custom front page / section styling */
-body.paropsis-home, body.paropsis-page {
-  background: #d8eefc;
-}
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #efe6d8; /* light brown matching index */
+        line-height: 1.6;
+        color: #333;
+    }
 
-nav.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+    /* Top title band */
+    .header {
+        background-color: #4b3621; /* dark brown */
+        color: white;
+        padding: 18px 30px;
+        font-size: 56px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
 
-a.menu-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.65);
-  text-decoration: none;
-  color: #0b2239;
-  font-size: 1.1rem;
-}
+    .header img {
+        height: 64px;
+        width: auto;
+    }
 
-a.menu-link:hover {
-  background: rgba(255,255,255,0.85);
-}
+    /* Subtitle band */
+    .subheader {
+        background-color: #8b6b43; /* mid-brown */
+        color: white;
+        padding: 8px 30px;
+        font-size: 22px;
+    }
 
-img.menu-icon {
-  width: 34px;
-  height: 34px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-</style></head>
-<body class="paropsis-page">
-<div class="container py-4">
-<a class="btn btn-sm btn-outline-primary mb-3" href="paropsis.html">← Home</a>
-<h2 class="mb-3">Using this Key</h2>
-<p>Content for this section will be added later.</p>
+    /* Main Content Area */
+    .content-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #4b3621;
+        border-bottom: 2px solid #8b6b43;
+        padding-bottom: 10px;
+        font-size: 32px;
+    }
+
+    h2 {
+        color: #4b3621;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    p {
+        margin-bottom: 18px;
+        text-align: justify;
+    }
+
+    ul {
+        margin-bottom: 18px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .illustration-box {
+        background-color: #fff;
+        border: 1px solid #8b6b43;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .illustration-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .caption {
+        font-size: 0.9em;
+        font-style: italic;
+        color: #666;
+        margin-top: 8px;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #8b6b43;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .back-button:hover {
+        background-color: #4b3621;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    /* Bottom band */
+    .footer {
+        background-color: #4b3621;
+        height: 60px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="STImage7.jpg" alt="">
+    TrachymelaID
 </div>
+
+<div class="subheader">
+    Guide to Using the Identification Key
+</div>
+
+<div class="content-container">
+    <h1>Overview</h1>
+    <p><i>Trachymela</i> includes a large number of species, yet most species tend to look very similar at first glance. They tend to be a shade of brown, from medium brown to almost black and their elytra are generally studded with wart-like elevations (<i>verrucae</i>) that are usually darker than the rest of the surface. Besides having few useful characters such as colour patterns that help in immediate identification, those morphological characters that are immediately diagnostic tend to be quite variable within species. Thus, it is rarely possible to identify a specimen of <i>Trachymela</i> to species by external morphology alone.</p>
+
+    <p>This is particularly true of most dead specimens, where the cuticular wax may be fully or partially absent. Specimens preserved in alcohol in particular will be missing all of their cuticular wax. Due to these factors, the key makes considerable use of morphological measurements. If a male is available for identification, the <i>aedeagus</i> can provide critical information to discriminate between very similar species.</p>
+
+    <h1>Using the key</h1>
+    <p>There are a few characters that have in practice been found to yield the best results with this key. Often, just a few measurements can result in quickly ending up with just one or two species to consider. To take these measurements, a microscope with a graticule is almost essential (though some length measurements can be made with vernier calipers). Most <i>Trachymela</i> species are restricted to a small number of closely related hosts, so if the host species is known, this can be a big help. The geographic locality where the specimen was found will also reduce the possible species pool.</p>
+
+    <p>The following will be a major help in determining a species, and are each discussed in more detail below:</p>
+    <ul>
+        <li>Determine the sex of the specimen</li>
+        <li>Measure the length of the specimen</li>
+        <li>Measure the distance between the humeral callus and elytral margin</li>
+        <li>If the specimen is a male, dissect out the aedeagus and measure its length</li>
+    </ul>
+
+    <h2>Sex of specimen</h2>
+    <p>Determining the sex of a specimen is relatively straightforward using the structure of the first tarsomere on the fore and mid legs. In males, there are two types of setae, with simple pointed setae on the fringe of the pad and a dense oval patch of spatulate setae at the middle. In the female (and the male hind legs), the setae are entirely simple and divided along the midline by a glabrous line. Note that carded specimens will need to be removed to examine this. If the legs have not been properly set in pinned specimens, it can sometimes be difficult to see this, particularly in very small specimens, if the legs are bunched up with tarsal pads pointing inwards.</p>
+
+    <h2>Length (BL)</h2>
+    <p>The length of a specimen can be measured with either vernier calipers or a microscope equipped with a graticule. One of the things to watch for, particularly in carded specimens, is that the pronotum may have been pushed forward when the specimen prepared, resulting in a gap between the mesoventrite and the prosternal process, resulting in overestimating the length by up to 5%. It is easily corrected by measuring the gap between prosternum and mesoventrite and subtracting it from the total length measurement.</p>
+
+    <h2>Humeral callus to elytral margin (HCE)</h2>
+    <p>This measurement is most easily performed with a graticule-equipped microscope, but on larger specimens could be done with a vernier caliper. The measurement is from the highest point of the humeral callus to the closest point on the elytral margin.</p>
+    
+    <div class="illustration-box">
+        <img src="key/trachymela/Media/Images/HCE.jpg" alt="Humeral callus to elytral margin measurement">
+        <div class="caption">Figure 1: Measurement of the distance between the humeral callus and elytral margin (HCE).</div>
+    </div>
+
+    <h2>Aedeagus</h2>
+    <p>The shape and structure of the <i>aedeagus</i> have several aspects that are used in the key and are helpful in placing the species within a group. In addition, its length (LPE) as a proportion of the insect’s length provides a valuable additional character to determine a species.</p>
+
+    <div class="illustration-box">
+        <img src="key/trachymela/Media/Images/Aedeagus Length.jpg" alt="Aedeagus length measurement">
+        <div class="caption">Figure 2: Measurement of aedeagus length (LPE).</div>
+    </div>
+
+    <h2>Other morphological measurements</h2>
+    <p>Several other measurements are used in the key and can be useful additional aids in determining a specimen but tend to be both more difficult to measure and provide less additional information.</p>
+
+    <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+<div class="footer"></div>
+
 </body>
 </html>
