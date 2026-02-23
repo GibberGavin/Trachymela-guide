@@ -1,138 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>TrachymelaID</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrachymelaID - Home</title>
+    <style>
+        :root {
+            --dark-brown: #4b3621;
+            --mid-brown: #8b6b43;
+            --light-tan: #efe6d8;
+            --eucalyptus-green: #6d7d6a; 
+            --text-main: #333;
+        }
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #efe6d8; /* light brown */
-    }
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif; 
+            background-color: var(--light-tan);
+            color: var(--text-main);
+        }
 
-    /* Top title band */
-    .header {
-        background-color: #4b3621; /* dark brown */
-        color: white;
-        padding: 18px 30px;
-        font-size: 56px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        gap: 18px;
-    }
+        .header {
+            background-color: var(--dark-brown);
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    .header img {
-        height: 64px;
-        width: auto;
-    }
+        .header-titles h1 {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+        }
 
-    /* Subtitle band */
-    .subheader {
-        background-color: #8b6b43; /* mid-brown */
-        color: white;
-        padding: 8px 30px;
-        font-size: 22px;
-    }
+        .author-name {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #dcd1c1;
+            margin-top: 4px;
+        }
 
-    /* Main menu area */
-    .menu {
-        padding: 40px 0;
-        max-width: 520px;
-        margin: 0 auto;
-    }
+        /* Hero Section */
+        .hero {
+            background-color: var(--dark-brown);
+            padding: 30px 5% 50px 5%;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
 
-    .menu-item {
-        display: flex;
-        align-items: center;
-        padding: 14px 18px;
-        margin-bottom: 18px;
-        text-decoration: none;
-        color: #000;
-        font-size: 26px;
-        background-color: rgba(255, 255, 255, 0.6);
-        border-radius: 12px;
-        transition: background-color 0.2s ease;
-    }
+        .hero-text { flex: 1; min-width: 320px; }
+        
+        .hero-image-container {
+            flex: 1.2;
+            min-width: 320px;
+            border: 3px solid var(--mid-brown);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
 
-    .menu-item img {
-        width: 64px;
-        height: auto;
-        margin-right: 18px;
-    }
+        .hero-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    .menu-item:hover,
-    .menu-item:focus {
-        background-color: rgba(139, 107, 67, 0.35);
-        outline: none;
-    }
+        /* Navigation Grid - 6 buttons */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: -30px 5% 40px 5%; /* Negative margin pulls it up into the hero slightly */
+            position: relative;
+            z-index: 10;
+        }
 
-    .menu-item:focus {
-        outline: 3px solid #4b3621;
-        outline-offset: 4px;
-    }
+        .nav-item {
+            background-color: var(--mid-brown);
+            color: white;
+            text-decoration: none;
+            padding: 18px 10px;
+            text-align: center;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    /* Bottom band (reserved area) */
-    .footer {
-        background-color: #4b3621; /* dark brown */
-        height: 60px;
-        margin-top: 40px;
-    }
-</style>
+        .nav-item:hover {
+            background-color: var(--eucalyptus-green);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            padding: 40px 5%;
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 600px) {
+            .nav-grid { grid-template-columns: 1fr 1fr; margin-top: 20px; }
+            .header h1 { font-size: 24px; }
+        }
+    </style>
 </head>
-
 <body>
 
 <div class="header">
-    <img src="STImage7.jpg" alt="">
-    TrachymelaID
+    <div class="header-titles">
+        <h1>TrachymelaID</h1>
+        <div class="author-name">by Gunter F. Maywald</div>
+    </div>
+    <img src="STImage7.jpg" alt="Logo" style="height: 45px;">
 </div>
 
-<div class="subheader">
-    Identification Key to the Trachymela of Australia
+<div class="hero">
+    <div class="hero-text">
+        <h2 style="font-size: 28px; color: var(--light-tan); margin-bottom: 15px;">A Guide to the genus <i>Trachymela</i></h2>
+        <p style="font-size: 17px; line-height: 1.5;">An interactive resource for the identification of 238 species of Australian leaf beetles. This project integrates taxonomic history, detailed morphological data, and the Lucid identification system.</p>
+    </div>
+    <div class="hero-image-container">
+        <img src="Ta04.jpg" alt="Trachymela papuligera">
+    </div>
 </div>
 
-<div class="menu">
-
-    <a class="menu-item" href="introduction.html">
-        <img src="STImage1.jpg" alt="">
-        Introduction
-    </a>
-
-    <a class="menu-item" href="using_this_key.html">
-        <img src="STImage2.jpg" alt="">
-        Using this Key
-    </a>
-
-    <a class="menu-item" href="key/trachymela/Media/Html/index.htm">
-        <img src="STImage3.jpg" alt="">
-        Fact Sheets
-    </a>
-
-    <a class="menu-item" href="trachymela_player.html">
-        <img src="STImage4.jpg" alt="">
-        Identify
-    </a>
-
-    <a class="menu-item" href="taxonomy.html">
-        <img src="STImage5.jpg" alt="">
-        Taxonomy
-    </a>
-
-    <a class="menu-item" href="key/trachymela/Media/Html/glossary.htm">
-        <img src="STImage6.jpg" alt="">
-        Glossary
-    </a>
-
-    <a class="menu-item" href="about_this_key.html">
-        <img src="STImage7.jpg" alt="">
-        About this Key
-    </a>
-
+<div class="nav-grid">
+    <a href="trachymela_player.html" class="nav-item">IDENTIFY (LUCID)</a>
+    <a href="species_index.html" class="nav-item">SPECIES INDEX</a>
+    <a href="introduction.html" class="nav-item">INTRODUCTION</a>
+    <a href="taxonomy.html" class="nav-item">TAXONOMY</a>
+    <a href="using_this_key.html" class="nav-item">USING THE KEY</a>
+    <a href="key/trachymela/Media/html/glossary.htm" class="nav-item">GLOSSARY</a>
 </div>
 
-<div class="footer"></div>
+<div class="content">
+    <p>The genus <i>Trachymela</i> is characterized by its warty dorsal surface and often cryptic brown-to-black coloration. This guide aims to resolve the difficulties in identifying these closely related species by utilizing a combination of geographic distribution, host plant associations, and precise anatomical measurements.</p>
+    
+    <p>Whether you are working with live field specimens or museum collections, start with the <b>Introduction</b> for an overview of the genus or use the <b>Identify</b> button to begin a Lucid identification session.</p>
+</div>
+
+<footer style="background-color: var(--dark-brown); color: #dcd1c1; padding: 20px 5%; text-align: center; font-family: Arial, sans-serif; font-size: 12px;">
+    &copy; 2026 Gunter F. Maywald. All rights reserved.
+</footer>
 
 </body>
 </html>
