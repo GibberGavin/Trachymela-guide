@@ -9,7 +9,10 @@ body {
 	vertical-align:top;	
 	font-family:'open_sansregular';
 	background:none repeat scroll 0 0 #FFFFFF;
-}
+	background-color: #efe6d8; /* Pale Tan */
+    color: #4b3621;            /* Dark Brown */
+    font-family: 'Georgia', serif;}
+	
 	@font-face {
     font-family:'open_sansregular';
     src:url('OpenSans-Regular-webfont.eot');
@@ -21,25 +24,47 @@ body {
     font-style:normal;
 }
 
+/* This pushes the entire page content down to clear the menu */
+#content {
+    margin-top: 60px !important; /* Adjust this until T01 is below the menu */
+    margin-left: 165px;
+    margin-right: 50px;
+}
+/*
  #content {
 	margin-left:165px;
 
 	margin-right: 50px;
 	min-width:680px;
 } 
-
+*/
 #banner {
-	height:121px;
+	height:80px;
 	margin:0px;
 	padding:0px;
+	background-color: #4b3621 !important; /* Dark Brown */
+    border-bottom: 4px solid #8b6b43;     /* Mid-Brown accent */
 }
 
 .bannerbg {
-	height:94px;
+	height:80px;
 	padding:0px;
 	margin:0px;
+	background-color: #4b3621 !important; /* Dark Brown */
+    border-bottom: 5px solid #8b6b43;     /* Mid-Brown accent */
+	background-image: none !important;    /* Removes the blue FSF image */
 }
 
+.fact_title h1 {
+    color: #ffffff !important;   /* Pure White */
+    font-size: 38px !important;  /* Large Banner Size */
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 4px 0 4px 4px;   /* Adds 'air' around the text */
+    text-align: left;
+}
+
+/*
 .fact_title {
 	padding-top:10px;	
 	padding-left:20px;
@@ -62,6 +87,17 @@ body {
 	margin-left:0px;
 	margin-top:10px;
 	margin-bottom:25px;
+}
+*/
+/* Ensure the title text inside the banner is White and Bold */
+.fact_title, .bannertitle {
+    color: #000000;
+	font-size:36px;
+	font-weight:bold;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
 }
 
 /*---------------------------- END PAGE LAYOUT SETTINGS  ----------------------------*/
@@ -162,14 +198,19 @@ ul.drop li:hover > ul { visibility:visible }
 	font-size:14px;
 	color:#FFFFFF;     
 	text-decoration:none;
-	background:#1b1a5c;
+	background:#8b6b43;
 	text-align:right;
-	padding:5px 10px 2px 20px;		
+	padding:4px 50px 4px 20px;		
 	margin:0px;
 	height:25px;
 	vertical-align:middle;
 	white-space:nowrap;
-	min-width:949px;
+	min-width: 100% !important;
+	overflow: hidden;
+	height: auto !important;
+	min-height: 40px;          /* Sets a minimum height */
+	padding-right: 40px !important; /* This creates a "safety zone" for the scrollbar */
+	box-sizing: border-box; /* This ensures padding doesn't make the bar wider than the screen */
 }
 
 #menuLeft {
@@ -180,14 +221,14 @@ ul.drop li:hover > ul { visibility:visible }
 }	
 
 h1 {
-    color:#01b8c2;
+    color: #4b3621;
     font-size:18px;
     font-weight:bold;
     letter-spacing:normal;
     margin-top:10px;
 }
 h2 {
-    color:#000000;
+    color: #4b3621;
     font-size:16px;
     font-weight:bold;
 }
@@ -213,7 +254,7 @@ html>body #content {
 
 #thumbnailsArea {
 	float:left;
-	width:310px;
+	width:280px;
 	padding:5px;
 	border-left:1px solid #60bac2;
 	border-right:1px solid #60bac2;
@@ -221,7 +262,8 @@ html>body #content {
 	background:#6dc1c8;
 	margin-right:20px;
 	text-align:center;
-}
+	background-color: #efe6d8 !important; /* Pale Tan */
+    border: 2px solid #8b6b43 !important; /* Mid-Brown Border */}
 
 #thumbnailsarea_other {
 	width:auto;
@@ -267,20 +309,21 @@ html>body #content {
   z-index:0;
   width:120px;
   clear:both;
-  margin-top:160px;
+/*  margin-top:160px; */
   margin-left:10px;
   background:#FFFFFF;
   padding:0px;
   border:0px;
-}
+	background-color: #efe6d8 !important; /* Pale Tan */
+    border: 2px solid #8b6b43 !important; /* Mid-Brown Border */}
 
 #left_menuTextarea {
   font-size:11px;
   padding:5px;
   text-align:left;
-  background:#6dc1c8;
-  border-left:#b6c4c0 1px solid;
-  border-right:#b6c4c0 1px solid;
+  background:#efe6d8;
+  border-left:#8b6b43 1px solid;
+  border-right:#8b6b43 1px solid;
   clear:both;
 }
 
@@ -292,7 +335,7 @@ html>body #content {
 }
 #left_menu a:hover {
   	font-weight:normal;
-	color:#dee35d;
+	color:#4b3621;
 	text-decoration:underline;
 }
 
@@ -480,11 +523,11 @@ li.glossary   {
 
 a:link
 {
-    color:#12bec8;
+    color:#8b6b43;
     text-decoration:none;
 }
 a:visited {
-    color:#1b1a5c;
+    color:#4b3621;
     text-decoration:none;
 }
 
@@ -495,7 +538,7 @@ a:active {
 
 a:hover {
 	text-decoration:underline;
-	color:#23c3cc;
+	color:#4b3621;
 }
 
 a.menu:link {
@@ -852,6 +895,16 @@ body{
 	border-style:none;
 	padding:0px;
 } 
+
+#title {
+    display: block !important;
+    font-size: 32px !important;    /* Makes Ta01 significantly larger */
+    color: #4b3621 !important;     /* Dark Brown */
+    margin-top: 50px !important;   /* Pushes it down to clear the menu */
+    margin-bottom: 20px !important;
+    padding-left: 0px;             /* Alignment check */
+    clear: both !important;        /* Forces it below the top menu band */
+}
 
 #left_menu {
 	display:none; 
