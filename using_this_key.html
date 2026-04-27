@@ -48,6 +48,32 @@
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
+	/* Container for side-by-side illustrations */
+	.illustration-row {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		margin: 20px 0;
+		align-items: stretch; /* Ensures boxes are the same height */
+	}
+
+	.illustration-row .illustration-box {
+		flex: 1;
+		margin: 0;
+		max-width: 45%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Force images to have the same aspect ratio */
+	.illustration-row .illustration-box img {
+		width: 100%;
+		height: 250px;       /* Set a fixed height that looks good for your photos */
+		object-fit: cover;   /* This crops the image slightly to fill the area without stretching */
+		object-position: center; 
+		border-bottom: 1px solid #eee; /* Optional separator before caption */
+	}
+	
     h1 {
         color: #4b3621;
         border-bottom: 2px solid #8b6b43;
@@ -151,7 +177,18 @@
     </ul>
 
     <h2>Sex of specimen</h2>
-    <p>Determining the sex of a specimen is relatively straightforward using the structure of the first tarsomere on the fore and mid legs. In males, there are two types of setae, with simple pointed setae on the fringe of the pad and a dense oval patch of spatulate setae at the middle. In the female (and the male hind legs), the setae are entirely simple and divided along the midline by a glabrous line. Note that carded specimens will need to be removed to examine this. If the legs have not been properly set in pinned specimens, it can sometimes be difficult to see this, particularly in very small specimens, if the legs are bunched up with tarsal pads pointing inwards.</p>
+    <p>Determining the sex of a specimen is relatively straightforward using the structure of the first tarsomere on the fore and mid legs. In males (Fig. 1a), there are two types of setae, with simple pointed setae on the fringe of the pad and a dense oval patch of spatulate setae at the middle. In the female (and the male hind legs) (Fig. 1b), the setae are entirely simple and divided along the midline by a glabrous line. Note that carded specimens will need to be removed to examine this. If the legs have not been properly set in pinned specimens, it can sometimes be difficult to see this, particularly in very small specimens, if the legs are bunched up with tarsal pads pointing inwards.</p>
+
+	<div class="illustration-row">
+		<div class="illustration-box">
+			<img src="key/trachymela/Media/Images/Male tarsi.jpg" alt="Male fore-tarsus">
+			<div class="caption">Figure 1a: Male tarsi showing dense oval patch of spatulate setae.</div>
+		</div>
+		<div class="illustration-box">
+			<img src="key/trachymela/Media/Images/Female tarsi.jpg" alt="Female fore-tarsus">
+			<div class="caption">Figure 1b: Female tarsi showing simple setae and glabrous midline.</div>
+		</div>
+	</div>
 
     <h2>Length (BL)</h2>
     <p>The length of a specimen can be measured with either vernier calipers or a microscope equipped with a graticule. One of the things to watch for, particularly in carded specimens, is that the pronotum may have been pushed forward when the specimen prepared, resulting in a gap between the mesoventrite and the prosternal process, resulting in overestimating the length by up to 5%. It is easily corrected by measuring the gap between prosternum and mesoventrite and subtracting it from the total length measurement.</p>
@@ -166,7 +203,7 @@
     
     <div class="illustration-box">
         <img src="key/trachymela/Media/Images/HCE.jpg" alt="Humeral callus to elytral margin measurement">
-        <div class="caption">Figure 1: Measurement of the distance between the humeral callus and elytral margin (HCE).</div>
+        <div class="caption">Figure 2: Measurement of the distance between the humeral callus and elytral margin (HCE).</div>
     </div>
 
     <h2>Aedeagus</h2>
@@ -174,7 +211,7 @@
 
     <div class="illustration-box">
         <img src="key/trachymela/Media/Images/Aedeagus Length.jpg" alt="Aedeagus length measurement">
-        <div class="caption">Figure 2: Measurement of aedeagus length (LPE).</div>
+        <div class="caption">Figure 3: Measurement of aedeagus length (LPE).</div>
     </div>
 
     <h2>Other morphological measurements</h2>
