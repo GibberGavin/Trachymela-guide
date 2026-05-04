@@ -124,6 +124,27 @@
         background-color: #4b3621;
     }
 
+	dialog {
+		border: 2px solid #4b3621;
+		border-radius: 12px;
+		background-color: #efe6d8;
+		padding: 20px;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+	}
+
+	dialog::backdrop {
+		background-color: rgba(0, 0, 0, 0.7); /* Dims the background */
+	}
+
+	.close-btn {
+		background: #8b6b43;
+		color: white;
+		border: none;
+		padding: 5px 10px;
+		cursor: pointer;
+		float: right;
+	}
+
     i { font-style: italic; }
 
     .footer {
@@ -165,7 +186,19 @@
 	<div style="margin-left: 20px;">(5) Humeral callus (size, colour, relationship to elytral surface)</div>
 	<div style="margin-left: 20px;">(5) Colouration</div>
 	
-    <h2>Key Diagnostic Characters</h2>
+    <h2>Puncturation</h2>
+	All Trachymela species have about 20 rows of punctures on each elytron.  In many species, these rows are easy to discern (as in Fig. 1), but in others they are almost or completely
+	<button onclick="showVariation('key/trachymela/Media/Images/Ta98_A04-489_SM.jpg', 'Figure: Elytral punctures obscured.')" class="popup-link">obscured</button>, 
+	by the rugulosity of the interstices.  Often punctures will be obscured towards the apex of the elytron, but be better defined in the central part.
+	Note that much finer punctures are present on many species, scattered among the larger punctures and even over the verrucae.
+	
+    <h2>Verrucae</h2>
+	<p>The layout of the <b>verrucae</b> can be quite variable. For example, some species have 
+	<button onclick="showVariation('key/trachymela/Media/Images/Ta70_A99-0015a_SM.jpg', 'Figure: Verrucae absent or effaced.')" class="popup-link">no verrucae</button>, 
+	while others have 
+	<button onclick="showVariation('key/trachymela/Media/Images/Ta02_A99-0806_SM.jpg', 'Figure: Verrucae scattered.')" class="popup-link">scattered verrucae</button> where their placement in interstices is quite difficult to discern.
+	</p>
+
     <p>Use this space to detail specific measurements or variations that help distinguish between similar <i>Trachymela</i> species.</p>
 
     <div class="illustration-row">
@@ -184,5 +217,22 @@
 
 <div class="footer"></div>
 
+<!-- One Dialog to rule them all -->
+<dialog id="masterPop">
+    <button class="close-btn" onclick="this.parentElement.close()">Close</button>
+    <div class="illustration-box">
+        <img id="popImage" src="" alt="Variation Image">
+        <div id="popCaption" class="caption"></div>
+    </div>
+</dialog>
+
+<script>
+    function showVariation(imgSrc, captionText) {
+        const modal = document.getElementById('masterPop');
+        document.getElementById('popImage').src = imgSrc;
+        document.getElementById('popCaption').innerText = captionText;
+        modal.showModal();
+    }
+</script>
 </body>
 </html>
