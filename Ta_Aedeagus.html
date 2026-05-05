@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TrachymelaID - Male Genitalia</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #efe6d8;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .header {
+        background-color: #4b3621;
+        color: white;
+        padding: 18px 30px;
+        font-size: 56px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .header img {
+        height: 64px;
+        width: auto;
+    }
+
+    .subheader {
+        background-color: #8b6b43;
+        color: white;
+        padding: 8px 30px;
+        font-size: 22px;
+    }
+
+    .content-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #4b3621;
+        border-bottom: 2px solid #8b6b43;
+        padding-bottom: 10px;
+        font-size: 32px;
+    }
+
+    h2 {
+        color: #4b3621;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    p {
+        margin-bottom: 18px;
+        text-align: justify;
+    }
+
+    /* Standard Box for Single Images */
+    .illustration-box {
+        background-color: #fff;
+        border: 1px solid #8b6b43;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .illustration-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Container for side-by-side illustrations */
+    .illustration-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0;
+        align-items: stretch;
+    }
+
+    .illustration-row .illustration-box {
+        flex: 1;
+        margin: 0;
+        max-width: 48%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Fixed aspect ratio for side-by-side images */
+    .illustration-row .illustration-box img {
+        width: 100%;
+        height: 250px; 
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .caption {
+        font-size: 0.9em;
+        font-style: italic;
+        color: #666;
+        margin-top: 8px;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #8b6b43;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .back-button:hover {
+        background-color: #4b3621;
+    }
+
+	dialog {
+		border: 2px solid #4b3621;
+		border-radius: 12px;
+		background-color: #efe6d8;
+		padding: 20px;
+		box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+	}
+
+	dialog::backdrop {
+		background-color: rgba(0, 0, 0, 0.7); /* Dims the background */
+	}
+
+	.close-btn {
+		background: #8b6b43;
+		color: white;
+		border: none;
+		padding: 5px 10px;
+		cursor: pointer;
+		float: right;
+	}
+
+    i { font-style: italic; }
+
+    .footer {
+        background-color: #4b3621;
+        height: 60px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="STImage7.jpg" alt="">
+    TrachymelaID
+</div>
+
+<div class="subheader">
+    Morphology: Male Genitalia
+</div>
+
+<div class="content-container">
+    <h1>Morphology: Male Genitalia</h1>
+    
+    <p>
+        If a male specimen is available, the <i>aedeagus</i> provides critical diagnostic information to discriminate between very similar species. 
+        In addition to its shape and structure, its length (LPE) relative to the body length (BL) is a valuable character.
+    </p>
+
+    <!-- 1. Shape -->
+    <h2>1. General Shape</h2>
+    <p>The general profile of the aedeagus can be categorized into four primary forms. Click each to view a representative example:</p>
+    <ul>
+        <li><button onclick="showVariation('Aed_Long.jpg', 'Shape: Long and thin.')" class="popup-link">Long and thin</button></li>
+        <li><button onclick="showVariation('Aed_Lanceolate.jpg', 'Shape: Lanceolate (spear-shaped).')" class="popup-link">Lanceolate</button></li>
+        <li><button onclick="showVariation('Aed_Trapezoid.jpg', 'Shape: Trapezoid.')" class="popup-link">Trapezoid</button></li>
+        <li><button onclick="showVariation('Aed_Other.jpg', 'Shape: Other/Irregular.')" class="popup-link">Other</button></li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- 2. Position of Widest Point -->
+    <h2>2. Position of Widest Point</h2>
+    <p>The location of the widest point (WPE) along the length of the aedeagus is a helpful metric for narrowing down species groups.</p>
+    <div class="illustration-row">
+        <div class="illustration-box">
+            <img src="Aed_Wide_Basal.jpg" alt="Widest point near base">
+            <div class="caption">Widest point located posteriorly (near base).</div>
+        </div>
+        <div class="illustration-box">
+            <img src="Aed_Wide_Apical.jpg" alt="Widest point near apex">
+            <div class="caption">Widest point located anteriorly (near apex).</div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- 3. Dorsal Sclerotization -->
+    <h2>3. Dorsal Sclerotization</h2>
+    <p>
+        The degree of hardening (sclerotization) on the dorsal surface can vary significantly. This is best observed under high magnification with backlight.
+    </p>
+    <ul>
+        <li><button onclick="showVariation('Aed_Sclero_Strong.jpg', 'Dorsal Sclerotization: Strong.')" class="popup-link">Strongly sclerotized</button> (Darker, more opaque)</li>
+        <li><button onclick="showVariation('Aed_Sclero_Weak.jpg', 'Dorsal Sclerotization: Weak.')" class="popup-link">Weakly sclerotized</button> (Paler, more translucent)</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <!-- 4. Ostium Shape -->
+    <h2>4. Ostium Shape</h2>
+    <p>The ostium is the opening at the distal end of the aedeagus. Its shape and the presence of associated structures are highly diagnostic:</p>
+    <div class="illustration-row">
+        <div class="illustration-box">
+            <img src="Ostium_Flaps.jpg" alt="Oval with flaps">
+            <div class="caption">Oval, with dorsal flaps present.</div>
+        </div>
+        <div class="illustration-box">
+            <img src="Ostium_NoFlaps.jpg" alt="Oval without flaps">
+            <div class="caption">Oval, dorsal flaps absent.</div>
+        </div>
+        <div class="illustration-box">
+            <img src="Ostium_Other.jpg" alt="Otherwise">
+            <div class="caption">Otherwise (irregular or specialized).</div>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- 5. Dimensions (LPE, HPE, WPE) -->
+    <h2>5. Standard Measurements</h2>
+    <div class="wax-row">
+        <div class="illustration-box">
+            <img src="key/trachymela/Media/Images/Aedeagus Length.jpg" alt="Aedeagus dimensions">
+            <div class="caption">Figure: Measurement of LPE, HPE, and WPE.</div>
+        </div>
+        <div class="wax-text">
+            <p>To ensure consistency, measurements should be taken as follows:</p>
+            <ul>
+                <li><b>LPE</b>: Length of the aedeagus[cite: 1].</li>
+                <li><b>WPE</b>: Maximum width of the aedeagus.</li>
+                <li><b>HPE</b>: Maximum height (profile view).</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="using_this_key.html" class="back-button">Back to User Guide</a>
+</div>
