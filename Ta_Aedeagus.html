@@ -152,7 +152,72 @@
         height: 60px;
         margin-top: 40px;
     }
-</style>
+	
+	/* Styling for the thumbnail-based popup triggers */
+	/* Container for the thumbnail and description row */
+	.aedeagus-entry {
+		display: flex;
+		align-items: flex-start; 
+		gap: 20px;
+		margin-bottom: 25px;
+		padding: 15px;
+		background-color: rgba(255, 255, 255, 0.5); /* Soft backing for the entry */
+		border-radius: 8px;
+		border-bottom: 1px dashed #8b6b43;
+	}
+
+	/* The clickable thumbnail button */
+	.thumb-link {
+		flex: 0 0 160px; /* Keeps button width consistent */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fff;
+		border: 1px solid #8b6b43;
+		padding: 10px;
+		cursor: pointer;
+		border-radius: 4px;
+		font: inherit; /* Ensures "View Example" matches page text */
+	}
+
+	.thumb-link:hover {
+		background-color: #fdfaf5;
+		border-color: #4b3621;
+	}
+
+	/* Updated Image Logic: No more chopping! */
+	.thumb-link img {
+		width: 140px;      
+		height: auto;      
+		max-height: 80px;  
+		object-fit: contain; /* Shows the full image from end to end */
+		background-color: #fff; 
+		border: 1px solid #ddd;
+		margin-bottom: 8px;
+	}
+
+	.thumb-label {
+		font-size: 0.85em;
+		font-weight: bold;
+		color: #8b6b43;
+		text-decoration: underline;
+	}
+
+	/* The non-clickable explanatory text */
+	.entry-description {
+		flex: 1; 
+		font-size: 0.95em;
+		color: #333;
+		line-height: 1.5;
+	}
+
+	.entry-description strong {
+		display: block;
+		font-size: 1.1em;
+		color: #4b3621;
+		margin-bottom: 5px;
+	}
+	</style>
 </head>
 
 <body>
@@ -176,14 +241,55 @@
 
     <!-- 1. Shape -->
     <h2>1. General Shape</h2>
-    <p>The general profile of the aedeagus can be categorized into four primary forms. Click each to view a representative example:</p>
-    <ul>
-        <li><button onclick="showVariation('Aed_Long.jpg', 'Shape: Long and thin.')" class="popup-link">Long and thin</button></li>
-        <li><button onclick="showVariation('Aed_Lanceolate.jpg', 'Shape: Lanceolate (spear-shaped).')" class="popup-link">Lanceolate</button></li>
-        <li><button onclick="showVariation('Aed_Trapezoid.jpg', 'Shape: Trapezoid.')" class="popup-link">Trapezoid</button></li>
-        <li><button onclick="showVariation('Aed_Other.jpg', 'Shape: Other/Irregular.')" class="popup-link">Other</button></li>
-    </ul>
+    <p>In the key, the general profile of the aedeagus (viewed from above) is categorized into four primary forms. Sometimes, two profiles may fit the shape - for example, it may be lanceolate in shape but also fit the definition of long and thin.
+	In that case, either or both of the options may be checked.  Click on a thumbnail below to view a representative example:</p>
 
+<!-- Long and Thin -->
+<div class="aedeagus-entry">
+    <!-- Clickable Part -->
+    <button class="thumb-link" onclick="showVariation('key/trachymela/Media/Images/Ta56_Ad04-724a_SM.jpg', 'Shape: Long and thin.')">
+        <img src="key/trachymela/Media/Thumbs/Ta56_Ad04-724a_SM.jpg" alt="Long and thin thumbnail">
+        <span class="thumb-label">View Example</span>
+    </button>
+
+    <!-- Non-Clickable Text Part -->
+    <div class="entry-description">
+        <strong>Long and thin</strong>
+        This is defined as the length (LPE) being more than four times the width at its widest point (WPE). 
+    </div>
+</div>
+
+<!-- Lanceolate -->
+<div class="aedeagus-entry">
+    <!-- Clickable Part -->
+    <button class="thumb-link" onclick="showVariation('key/trachymela/Media/Images/Ta29_Ad98-0831aa.jpg', 'Shape: Lanceolate.')">
+        <img src="key/trachymela/Media/Thumbs/Ta29_Ad98-0831aa.jpg" alt="Lanceolate thumbnail">
+        <span class="thumb-label">View Example</span>
+    </button>
+
+    <!-- Non-Clickable Text Part -->
+    <div class="entry-description">
+        <strong>Lanceolate</strong>
+        In this shape, the aedeagus is broadest at the base and then narrows all the way to the apex. 
+    </div>
+</div>
+
+<!-- Trapezoid -->
+<div class="aedeagus-entry">
+    <!-- Clickable Part -->
+    <button class="thumb-link" onclick="showVariation('key/trachymela/Media/Images/Ta71_Ad02-057a_SM.jpg', 'Shape: Trapezoid.')">
+        <img src="key/trachymela/Media/Thumbs/Ta71_Ad02-057a_SM.jpg" alt="Trapezoid thumbnail">
+        <span class="thumb-label">View Example</span>
+    </button>
+
+    <!-- Non-Clickable Text Part -->
+    <div class="entry-description">
+        <strong>Trapezoid</strong>
+        This is a relatively uncommon shape in <i>Trachymela</i>.  In this shape, the widest point of the aedeagus is very close to the apex. 
+    </div>
+</div>
+
+	
     <hr class="section-divider">
 
     <!-- 2. Position of Widest Point -->
@@ -253,3 +359,23 @@
 
     <a href="using_this_key.html" class="back-button">Back to User Guide</a>
 </div>
+
+<!-- One Dialog to rule them all -->
+<dialog id="masterPop">
+    <button class="close-btn" onclick="this.parentElement.close()">Close</button>
+    <div class="illustration-box">
+        <img id="popImage" src="" alt="Variation Image">
+        <div id="popCaption" class="caption"></div>
+    </div>
+</dialog>
+
+<script>
+    function showVariation(imgSrc, captionText) {
+        const modal = document.getElementById('masterPop');
+        document.getElementById('popImage').src = imgSrc;
+        document.getElementById('popCaption').innerText = captionText;
+        modal.showModal();
+    }
+</script>
+</body>
+</html>
