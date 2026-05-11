@@ -114,9 +114,20 @@
 
         @media (max-width: 600px) {
             .nav-grid { grid-template-columns: 1fr 1fr; margin-top: 20px; }
-            .header h1 { font-size: 24px; }
-        }
-    </style>
+            .header h1 { font-size: 24px;
+		}
+	}
+			
+	.nav-item.highlight-only {
+		border: 4px double #efe6d8 !important; /* Forces the double border */
+		outline: 2px solid #8b6b43 !important;
+		font-weight: bold !important;
+		letter-spacing: 1.5px !important;
+		background-color: #5d4329 !important; /* Darker brown to stand out */
+		transform: scale(1.05); /* Makes the button slightly larger than the others */
+		box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+	}
+</style>
 </head>
 <body>
 
@@ -141,7 +152,7 @@
 <div class="nav-grid">
     <a href="introduction.html" class="nav-item">INTRODUCTION</a>
     <a href="using_this_key.html" class="nav-item">USING THE KEY</a>
-    <a href="trachymela_player.html" class="nav-item">IDENTIFY (LUCID)</a>
+    <a href="trachymela_player.html" class="nav-item highlight-only">IDENTIFY (LUCID)</a>
     <a href="species_index.html" class="nav-item">SPECIES INDEX</a>
     <a href="taxonomy.html" class="nav-item">TAXONOMY</a>
     <a href="key/trachymela/Media/html/glossary.htm" class="nav-item">GLOSSARY</a>
