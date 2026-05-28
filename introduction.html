@@ -122,6 +122,18 @@
 	h2, .back-button, .footer {
 		clear: both;
 	}
+	
+	/* Styling for text citations */
+	.citation-link {
+		color: var(--mid-brown); /* Uses your waxy mid-brown accent */
+		text-decoration: none;   /* Removes the default underline */
+		font-weight: bold;
+	}
+
+	.citation-link:hover {
+		color: var(--dark-brown); /* Darkens slightly when hovered */
+		text-decoration: underline; /* Shows underline only on hover */
+	}	
 </style>
 </head>
 
@@ -157,7 +169,7 @@
     </div>	
 	<p> 
 		The Eucalypt Leaf Beetles are a species-rich group. <i>Paropsis</i> (Figure 2) and <i>Paropsisterna</i> (Figure 3) together 
-        comprise about 200 described species (Reid, 2006), though <i>Paropsisterna</i> likely contains many more undescribed taxa. 
+        comprise about 200 described species (<a href="taxonomy.html#reid2006" class="citation-link">Reid, 2006</a>), though <i>Paropsisterna</i> likely contains many more undescribed taxa. 
         <i>Trachymela</i> (Figure 1) has approximately 120 described species, but as this guide demonstrates, there are likely 
         at least as many undescribed species remaining in Australia.
 	</p>
