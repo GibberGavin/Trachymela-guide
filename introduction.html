@@ -134,6 +134,60 @@
 		color: var(--dark-brown); /* Darkens slightly when hovered */
 		text-decoration: underline; /* Shows underline only on hover */
 	}	
+
+/* Table of Contents Container */
+    .toc-box {
+        background-color: #fcf8f2;
+        border: 1px solid #8b6b43;
+        border-radius: 6px;
+        padding: 15px 20px;
+        margin: 25px 0;
+    }
+
+    .toc-box h3 {
+        margin-top: 0;
+        color: #4b3621;
+        font-size: 18px;
+        border-bottom: 1px dashed #8b6b43;
+        padding-bottom: 5px;
+    }
+
+    .toc-box ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .toc-box li {
+        margin-bottom: 8px;
+    }
+
+    .toc-box li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: normal;
+        transition: color 0.2s ease;
+    }
+
+    .toc-box li a:hover {
+        color: #8b6b43;
+        text-decoration: underline;
+    }
+
+    /* Highlight the link that goes to the external Methods page */
+    .toc-box li a.methods-toc-link {
+        font-weight: bold;
+        color: #8b6b43;
+    }
+    
+    .toc-box li a.methods-toc-link:hover {
+        color: #4b3621;
+    }
+
+    /* Enable smooth scrolling when clicking internal section anchors */
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 </head>
 
@@ -151,14 +205,25 @@
 <div class="content-container">
     <h1>Introduction to Trachymela and the species guide</h1>
 
+<div class="toc-box">
+    <h3>Page Contents</h3>
+    <ul>
+        <li><a href="#genus-overview">The genus <i>Trachymela</i></a></li>
+        <li><a href="#identification">Identifying <i>Trachymela</i> species</a></li>
+        <li><a href="#species-names">Species Names and Species Codes</a></li>
+        <li><a href="#species-concept">The Species Concept used for <i>Trachymela</i></a></li>
+        <li><a href="methods.html" class="methods-toc-link">Material and Methods (Separate Page) →</a></li>
+    </ul>
+</div>
+
     <div class="illustration-box">
         <img src="key/trachymela/Media/Images/Ta10_A17-217x.jpg" alt="Trachymela specimen overview">
         <div class="caption">Figure 1: The small species <b>Ta10</b> is widespread on box eucalypts (<i>Eucalyptus</i> section Adnataria) in the arid zone.</div>
     </div>
 
-    <h2>The genus <i>Trachymela</i></h2>
+    <h2 id="genus-overview">The genus <i>Trachymela</i></h2>
 	<p>
-<i>Trachymela</i> is a genus of leaf beetles found on eucalypts and their close relatives within the family Myrtaceae throughout Australia. 
+		<i>Trachymela</i> is a genus of leaf beetles found on eucalypts and their close relatives within the family Myrtaceae throughout Australia. 
         They belong to the subtribe Paropsina, a group that includes other Myrtaceae-feeding genera such as <i>Paropsis</i> and <i>Paropsisterna</i>, 
         as well as genera specialized primarily on <i>Acacia</i>, such as <i>Dicranosterna</i> and <i>Peltoschema</i>. 
         While informally known as "Tortoise Beetles," the term "Eucalypt Leaf Beetles" is preferred for the three genera that feed mainly on eucalypts.
@@ -204,7 +269,7 @@
 	However, the majority of species have relatively narrow host preferences, often confined to within a eucalypt sub-genus, or even more closely to sections such as the boxes (<i>Eucalyptus</i> section Adnataria).
 	Identifying the host that a specimen was found on can be a very useful piece of information in helping determine the species.
 	
-    <h2>Identifying <i>Trachymela</i> species</h2>
+    <h2 id="identification">Identifying <i>Trachymela</i> species</h2>
 	<p style="clear: both;">
 		The Lucid interactive key that forms part of this guide allows you to identify <i>Trachymela</i> adults as well as a few other species that are often mistaken for them.
 		To use this key effectively, it is first necessary to ensure that the specimen in question belongs to the genus <i>Trachymela</i>.  The most authoritative source for this is the key provided in Reid (2006) to all the genera within the subfamily Chrysomelinae.
@@ -212,7 +277,7 @@
 		Larvae will be mentioned in the species descriptions in this guide in the few cases where they are known but their identification will not be dealt with.  Most <i>Trachymela</i> larvae have a characteristic appearance (Figure 4), though there are some species of <i>Paropsisterna</i> (such as the common and widely distributed <i>P. nigerrima</i>) that have almost identical larvae. 
 	</p>
 
-    <h2>Species names and species codes</h2>
+    <h2 id="species-names">Species names and species codes</h2>
 	<p>
 		There are about 130 names that have been applied to <i>Trachymela</i> species over the years.  All but a very few of these were described in the 19th century by workers including Olivier (1807), Marsham (1808), Erichson (1842), Stål (1860), Clark (1865), Chapuis (1877) and Blackburn (1892, 1896, 1897, 1907).
 		Blackburn (1896, 1897) provided the only revision of the full genus, which at the time formed part of the genus <i>Paropsis</i> (that then included essentially all Paropsina).  He did provide a key to the species known at the time, but it is quite difficult to use and completely ignored genitalic and cuticular wax characters.  Weise (1908) created the genus <i>Trachymela</i> for those species that are tubercular, and constitute Group iii of Blackburn's revision.
@@ -227,7 +292,7 @@
 		I have also included the relevant parts of Blackburn's key and notes on my interpretation of that species and its likely identity with a species code (for example, <b>Ta34</b> = <i>T. stigma</i>).  All of the species names and species codes can be referenced via the <a href="species_index.html">Species Index</a>.  Note that the key to the species includes only the species codes.
 	</p>
 
-<h2>The Species Concept used for <i>Trachymela</i></h2>
+	<h2 id="species-concept">The Species Concept used for <i>Trachymela</i></h2>
     <p>
         To undertake a comprehensive taxonomic work of this scale, it is essential to establish a clear framework for what constitutes a species. Decades of debate—dating back to before Darwin—have produced various species concepts. The fundamental challenge arises from our desire to categorize organisms into discrete, orderly "boxes," whereas nature is rarely so tidy. Many host plants, particularly the eucalypts, offer prominent examples of this genetic fluidity through frequent hybridization.
     </p>
