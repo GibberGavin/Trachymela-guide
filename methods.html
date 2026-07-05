@@ -170,7 +170,7 @@
 	<h2>Extracting the Aedeagus</h2>
 	<p>
         In freshly killed males, the genitalia can usually be extracted by inserting a small pin (slightly bent at the tip) into the terminal abdominal segment, hooking the sclerotised aedeagus and gently pulling the structure outward.
-		For older specimens, the beetle must first be softened by soaking in hot water for 15-30 minutes. The left elytron can then be carefully pried upward to allow a small lateral incision into the abdomen, through which the aedeagus is extracted using fine forceps or a bent pin. Returning the elytron to its natural resting position ensures minimal visible damage to the specimen.
+		For older specimens, the beetle must first be softened by soaking in hot water for 15-30 minutes. The left elytron can then be carefully pried upward and held back with a pin to allow a small lateral incision into the abdomen, through which the aedeagus is extracted using fine forceps or a bent pin. Returning the elytron to its natural resting position ensures minimal visible damage to the specimen.
     </p>
     <p>
         The extracted aedeagus is cleared in a 10% KOH solution for roughly three hours at room temperature to dissolve attached soft tissue. The structure is then rinsed in distilled water for several hours, dehydrated in alcohol, and dried before being mounted on a card point pinned beneath the corresponding adult. 
@@ -187,7 +187,7 @@
     <p>
         To achieve a sufficient depth of field for pinned specimens and extracted genitalia, automated focus-stacking was utilized.
 		The stacking rig consisted of a <i>WeMacro</i> motorized rail controlled via its dedicated app, a Panasonic G9 body, a Laowa 2x ultra-macro lens, and up to three Meike macro extension rings as required.
-		Studio lighting was obtained from two Godox TT350o flash units sync'd via a Godox X1R wireless trigger.
+		Studio lighting was obtained from two Godox TT350o flash units sync'd via a Godox X1R wireless trigger.  At least 3 layers of diffusers were used between the specimen and flash units to obtain an even light distribution.
 		While this configuration provided adequate magnification to capture the outlines of even the smallest structures (~1.2 mm aedeagus length), resolving fine internal details tested the limits of the optics.
 		The resulting raw image stacks were compiled into single deep-focus composites using <i>Helicon Focus</i> software.
     </p>
@@ -195,17 +195,17 @@
 	<h2>Data & Database Management</h2>
 	<p>
         Locality and collection data are managed within a structured database. The core schema was built using <i>BioLink</i>—a platform developed by CSIRO Entomology between 1998 and 1999.
-		Because <i>BioLink</i> has been legacy software for over a decade, it proved incompatible with modern Windows 11 architectures.
-		To circumvent this without losing decades of data, a custom application was written in <i>C#</i> (termed <i>BioDataLink</i>) to directly interface with and maintain the legacy database tables.
-		The development and syntax optimization of the BioDataLink codebase were assisted by the Google Gemini large language model.
+		<i>BioLink</i> has been legacy software for over a decade, and an installation package did not seem to be available any more.  In order to be able to continue to access and update the database into the future, a custom application (termed <i>BioDataLink</i>) was written in <i>C#</i> to directly interface with the legacy database tables.
+		The development and syntax optimization of the <i>BioDataLink</i> codebase were assisted by the Google Gemini large language model.
     </p>
     <p>
-        The <i>BioDataLink</i> portal allows seamless record modification, updates to shifting species concepts, and data imports from community science platforms like <a href="https://www.inaturalist.org" target="_blank">iNaturalist</a>.
+        The <i>BioDataLink</i> portal allows convenient entry and modification of specimen material records, as well as updates to the taxonomic schema (eg, creating new species, moving species to different parent taxa, etc.).
+		It also allows data imports from community science platforms like <a href="https://www.inaturalist.org" target="_blank">iNaturalist</a>.
 		Additionally, it automates the generation of the distribution maps displayed throughout the key and species descriptions. 
     </p>
     <p>
-        Representative series for each putative species were quantified across a standardized suite of metrics detailed later in this guide. Measurements were logged in an <i>Excel</i> spreadsheet file (<code>Morphometrics.xlsm</code>) using the unique specimen Accession Numbers.
-		An <i>R</i> script (<code>MorphoSum</code>) combines data from both the database and spreadsheet to create statistical summaries and render diagnostic comparative charts of the data for each species.
+        Representative series for each putative species were measured for a standardized suite of metrics detailed later in this guide.  These measurements were logged in an <i>Excel</i> spreadsheet file (<code>Morphometrics.xlsm</code>) using the unique specimen Accession Numbers.
+		An <i>R</i> script (<code>MorphoSum</code>) was then used to combine data from both the database and spreadsheet to create statistical summaries and render diagnostic comparative charts of the data for each species.  These summaries and a selection of the charts are available via the key. 
     </p>
 
 	<h2>Determination of Species</h2>
@@ -220,7 +220,7 @@
         <h3>Skewed Field Sex-Ratios</h3>
         <p>
 		    Across the genus, collected specimens in a species are often heavily skewed toward females.
-            Using an exact binomial test across the collected material, 23 species exhibit a statistically significant abundance of females over males (p < 0.05), whereas the inverse is true for only a single species.
+            Using an exact binomial test across the collected material, 23 species exhibit a statistically significant abundance of females over males (p &lt; 0.05), whereas the inverse is true for only a single species.
 			As a number of taxa are known from just one male specimen, it is likely that at least as many taxa are represented only by female specimens.
 			Where such unique female specimens exhibit structural discontinuity clear enough to warrant distinction from known taxa, they have been treated as the baseline for a coded species.
         </p>
