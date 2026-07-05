@@ -2,7 +2,7 @@ name: Deploy Trachymela Guide
 
 on:
   push:
-    branches: ["main"] # If your default branch is called "master", change "main" to "master"
+    branches: ["main"] # Keep this as "main" or "master" depending on your branch name
 
 permissions:
   contents: read
@@ -24,13 +24,13 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
-          path: '.' # Serves your whole repository folder
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
